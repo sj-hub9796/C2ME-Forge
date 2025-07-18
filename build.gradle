@@ -11,11 +11,12 @@ buildscript {
 plugins {
     id 'eclipse'
     id 'idea'
+    id 'java-library'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id "me.champeau.jmh" version "0.7.1"
 }
 
 apply plugin: 'org.spongepowered.mixin'
-apply plugin: 'net.minecraftforge.gradle'
 
 group = mod_group_id
 version = mod_version
